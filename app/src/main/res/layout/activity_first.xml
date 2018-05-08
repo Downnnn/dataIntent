@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+<TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TableRow>
+        <TextView android:text="To SecondActivity:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/info1"
+            android:layout_width="match_parent"
+            android:textSize="20sp"/>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="From SecondActivity:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:textSize="20sp"/>
+
+    </TableRow>
+
+    <TableRow>
+    <Button
+        android:id="@+id/button1"
+        android:text="跳转并传值"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </TableRow>
+</TableLayout>
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
